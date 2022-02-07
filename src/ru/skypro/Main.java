@@ -9,11 +9,8 @@ public class Main {
             System.out.print(" " + p);
         }
         System.out.print("\n");
-        int re = 1;
-        int st = 11;
-        for (int rest = 0; rest < 10; rest++) {
-            st = st - re;
-            System.out.print(" " + st);
+        for (int rest = 10; rest > 0; rest--) {
+            System.out.print(" " + rest);
         }
         System.out.print("\n");
         int friday = 4;
@@ -23,7 +20,7 @@ public class Main {
         int year = 2022;
         int comet = year - 200;
         int cometForAllYears = year + 100;
-        for (int all = cometForAllYears; all > comet; all+=79) {
+        for (int all = comet; all < cometForAllYears; all++) {
             if (all % 79 == 0) {
                 System.out.println(all);
             }
